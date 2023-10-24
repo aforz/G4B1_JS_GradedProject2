@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/template.css">
+    <title>Resume Template</title>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="header">
+            <div class="search-div">
+                <input type="text" placeholder="Search for keywords to filter the result" class="search" id="search" />
+            </div>
+            <div class="button-div">
+                <button class="btn" id="previous-button">Previous</button>
+                <button class="btn" id="next-button">Next</button>
+            </div>
+        </div>
+        <div class="error" id="error">
+            <div id="error-block">
+                <h3 class="error-message">Invalid search or No applications for this job</h3>
+                <img src="../assets/sadSmiley.jpg" alt="Avatar" class="no-result-image" />
+            </div>
+        </div>
+        <div class="resume" id="resume">
+            <div class="resume-header">
+                <div class="resume-header-name">
+                    <h1 class="resume-header-name-h1" id="resume-name"></h1>
+                    <div class="resume-applied-for">
+                        Applied for : <p class="applied-for-p" id="applied-for"></p>
+                    </div>
+                </div>
+                <div class="resume-header-logo">
+                    <img src="" alt="" class="resume-header-logo-img" id="img" />
+                </div>
+            </div>
+            <div class="resume-main">
+                <div class="resume-left-section">
+                    <div class="personal-info">
+                        <h3>Personal Information</h3>
+                        <ul class="personal-info-ul">
+                            <li class="phone-no" id="phone-no"></li>
+                            <li class="email" id="email"></li>
+                            <li class="linkedin" id="linkedin">
+                                <a id="linkedin-href"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="technical-skills">
+                        <h3>Technical Skills</h3>
+                        <ul id="technical-skills-ul" class="technical-skills-ul"></ul>
+                    </div>
+                    <div class="hobbies">
+                        <h3>Hobbies</h3>
+                        <ul id="hobbies-ul" class="hobbies-ul"></ul>
+                    </div>
+                </div>
+                <div class="resume-right-section">
+                    <div class="work-experience" id="work-experience-div">
+                        <h2>Work Experience in previous company</h2>
+                        <div class="company-details">
+                            <div class="company-name-div">
+                                <p class="company-name-header" id="company-name-p">
+                                    <span class="company-name-span" id="company-name-span">Company Name: </span>
+                                </p>
+                            </div>
+                            <div class="position-div">
+                                <p class="position-header" id="position-p">
+                                    <span class="position-span" id="position-span">Position: </span>
+                                </p>
+                            </div>
+                            <div class="start-date-div">
+                                <p class="start-date-header" id="start-date-p">
+                                    <span class="start-date-span" id="start-date-span">Start Date:</span>
+                                </p>
+                            </div>
+                            <div class="end-date-div">
+                                <p class="end-date-header" id="end-date-p">
+                                    <span class="end-date-span" id="end-date-span">End Date:</span>
+                                </p>
+                            </div>
+                            <div class="summary-div">
+                                <p class="summary-header" id="summary-p">
+                                    <span class="summary-span" id="summary-span">Summary:</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects" id="projects-div">
+                        <h2>Projects</h2>
+                        <div class="project-details">
+                            <p class="project-p" id="project-p">
+                                <span id="project-span"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education" id="education-div">
+                        <h2>Education</h2>
+                        <div class="education-details">
+                            <ul class="education-details-ul">
+                                <li class="ug-details">
+                                    <p class="ug-heading" id="ug-p">
+                                        <span class="education-span">UG:</span>
+                                    </p>
+                                </li>
+                                <li class="pu-details">
+                                    <p class="pu-heading" id="pu-p">
+                                        <span class="education-span">PU:</span>
+                                    </p>
+                                </li>
+                                <li class="high-school-details">
+                                    <p class="hs-heading" id="hs-p">
+                                        <span class="education-span">High School:</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="internship" id="internship-div">
+                        <h2>Internship</h2>
+                        <div class="internship-details-div">
+                            <ul class="internship-details-ul">
+                                <li class="company-name-li">
+                                    <p class="company-name-header" id="int-company-name-p">
+                                        <span class="company-name-span" id="int-company-name-span">Company Name:</span>
+                                    </p>
+                                </li>
+                                <li class="position-li">
+                                    <p class="position-header" id="int-position-p">
+                                        <span class="position-span" id="int-position-span">Position:</span>
+                                    </p>
+                                </li>
+                                <li class="start-date-li">
+                                    <p class="start-date-header" id="int-start-date-p">
+                                        <span class="start-date-span" id="int-start-date-span">Start Date:</span>
+                                    </p>
+                                </li>
+                                <li class="end-date-li">
+                                    <p class="end-date-header" id="int-end-date-p">
+                                        <span class="end-date-span" id="int-end-date-span">End Date:</span>
+                                    </p>
+                                </li>
+                                <li class="summary-li">
+                                    <p class="summary-header" id="int-summary-p">
+                                        <span class="summary-span" id="int-summary-span">Summary:</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <h2>Achievements</h2>
+                        <div class="achievements-div" id="achievements-div">
+                            <ul class="achievements-ul" id="achievements-ul"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../data/resume.js" type="text/javascript"></script>
+    <script src="../js/template.js" type="text/javascript"></script>
+</body>
+
+</html>
