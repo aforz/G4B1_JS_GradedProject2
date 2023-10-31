@@ -1,0 +1,22 @@
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #686464;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+  }
+  
+  button {
+    background-color: #62645be7;
+    color: rgb(14, 13, 13);
+    padding: 14px 20px;
+    margin: 8px 268px;
+    border: none;
+    cursor: pointer;
+    width: 28%;
+    border-radius: 0.25rem;
+  }
+  
+  body {font-family: Arial, Helvetica, sans-serif;}
