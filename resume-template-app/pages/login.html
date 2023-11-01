@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <title>User Login Page</title>
+</head>
+
+<body>
+  <div id="id01" class="container">
+    <form id="lForm" class="container-content animate" onsubmit="onLoginClick()">
+      <div class="inner-container">
+        <label for="username"><b>Username</b></label>
+        <input id="username" type="text" placeholder="User Name" name="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input id="password" type="password" placeholder="Password" name="password" required>
+        <p id="error" class="error"></p>
+        <button type="submit" class="loginbtn">Login</button>
+      </div>
+    </form>
+  </div>
+  <script src="../js/login.js"></script>
+  <script src="../resources/data/credentials.js"></script>
+</body>
+
+</html>

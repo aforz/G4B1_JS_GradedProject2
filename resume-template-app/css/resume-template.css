@@ -1,0 +1,174 @@
+.actions-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.move-btns {
+    width: 150px;
+    background-color: #eae5f1e7;
+    margin-right: 10px;
+}
+
+.search-bar {
+    max-width: 260px;
+    margin: px 10px !important;
+}
+
+.resume-container {
+    width: 85%;
+    display: none;
+    margin-top: 50px;
+    height: auto;
+    border-radius: 0.30rem;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px #888880;
+}
+
+.resume-header {
+    background-color: #d2faff;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    border-radius: 0.25rem;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 250px;
+}
+
+
+.header-center {
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.candidate-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.position {
+    font-weight: bold;
+    bottom: 25px;
+    position: absolute;
+}
+
+.resume-body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-exp {
+    width: 70%;
+    padding: 10px 10px 10px 0px;
+}
+
+.basics {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+}
+
+h1,
+h3,
+h2,
+h4,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.basics {
+    text-align: right;
+    width: auto;
+    height: fit-content;
+    background: #ffe3e9;
+}
+
+.basics .titles {
+    padding: 10px;
+    background-color: grey;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.detail-padding {
+    padding: 10px 0px 10px 40px
+}
+
+.no-result-style {
+    width: 50%;
+    padding: 75px;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px #888888;
+    display: none;
+}
+
+.details-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.no-result-image {
+    width: 75px;
+    height: 75px;
+    padding-right: 50px;
+}
+
+.no-result-found {
+    font-size: 20px;
+}
+
+.personal-info,
+.tech-skills,
+.hobbies {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #5a0606;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
